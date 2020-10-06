@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/home/guillaume/Documents/git/EVEEX-FPGA/get_started/get_started.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-Master.xdc rfile:../../../get_started.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
+set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T8 IOSTANDARD LVCMOS33} [get_ports {led}]
