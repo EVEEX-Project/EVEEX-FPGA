@@ -10,6 +10,7 @@ constant max_count : natural := 100000000; -- Ref clock at 100MHz, LED should bl
     begin
         process(clk)
         variable count : natural range 0 to max_count;
+        begin
         if rising_edge(clk) then
             if count < max_count/2 then
                 count := count + 1;
