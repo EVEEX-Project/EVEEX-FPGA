@@ -4,3 +4,11 @@ fpga4students-image-processing/project_test/project_test.cache/wt/
 memory_to_macroblock/project_1/project_1.cache/wt/
 
 *.log
+
+fpga4students-image-processing/project_test/project_test.hw/
+
+fpga4students-image-processing/project_test/project_test.ip_user_files/mem_init_files/
+
+fpga4students-image-processing/project_test/project_test.ip_user_files/
+
+fpga4students-image-processing/project_test/project_test.sim/sim_1/behav/xsim/

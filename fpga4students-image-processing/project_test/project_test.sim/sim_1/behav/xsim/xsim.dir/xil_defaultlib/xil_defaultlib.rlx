@@ -1,9 +1,0 @@
-0.7
-2020.1
-May 27 2020
-19:59:15
-/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/image_read.v,1534625620,verilog,,/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/image_write.v,/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/parameter.v,image_read,,,,,,,,
-/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/image_write.v,1534624292,verilog,,/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/tb_simulation.v,,image_write,,,,,,,,
-/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/parameter.v,1605627268,verilog,,,,,,,,,,,,
-/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/project_test/project_test.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
-/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/tb_simulation.v,1534184744,verilog,,,/media/sytrics/Storage/git/EVEEX-FPGA/fpga4students-image-processing/parameter.v,tb_simulation,,,,,,,,
