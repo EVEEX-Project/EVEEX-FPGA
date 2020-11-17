@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../memory.vhd" \
+"../../../../../parser.vhd" \
+"../../../../../top.vhd" \
+"../../../../../transfer.vhd" \
+"../../../../../top_tb.vhd" \
+
+# Do not sort compile order
+nosort

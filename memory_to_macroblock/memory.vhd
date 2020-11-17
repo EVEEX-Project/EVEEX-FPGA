@@ -11,7 +11,7 @@ end memory;
 
 architecture behavioral of memory is
 -- define the new type for the 128x8 RAM 
-type RAM_ARRAY is array (0 to 8) of std_logic_vector (11 downto 0);
+type RAM_ARRAY is array (0 to 8) of std_logic_vector (11 downto 0); -- change (0 to 8 ) to change ram size 
 -- initial values in the RAM
 signal RAM: RAM_ARRAY :=(
    "111100000000",

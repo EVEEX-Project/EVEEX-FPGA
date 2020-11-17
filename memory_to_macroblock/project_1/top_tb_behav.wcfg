@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="34301fs"></ZoomEndTime>
+      <Cursor1Time time="5550fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/top_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/top_tb/running">
+      <obj_property name="ElementShortName">running</obj_property>
+      <obj_property name="ObjectShortName">running</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/enable">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/line_out">
+      <obj_property name="ElementShortName">line_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">line_out[35:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/top_tb/HALF_PERIOD">
+      <obj_property name="ElementShortName">HALF_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">HALF_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM">
+      <obj_property name="ElementShortName">RAM[0:8][11:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[0:8][11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[0]">
+         <obj_property name="ElementShortName">[0][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[1]">
+         <obj_property name="ElementShortName">[1][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[2]">
+         <obj_property name="ElementShortName">[2][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[3]">
+         <obj_property name="ElementShortName">[3][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[4]">
+         <obj_property name="ElementShortName">[4][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[5]">
+         <obj_property name="ElementShortName">[5][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[6]">
+         <obj_property name="ElementShortName">[6][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[7]">
+         <obj_property name="ElementShortName">[7][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/uut0/RAM[8]">
+         <obj_property name="ElementShortName">[8][11:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
