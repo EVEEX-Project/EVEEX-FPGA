@@ -12,3 +12,21 @@ fpga4students-image-processing/project_test/project_test.ip_user_files/mem_init_
 fpga4students-image-processing/project_test/project_test.ip_user_files/
 
 fpga4students-image-processing/project_test/project_test.sim/sim_1/behav/xsim/
+
+EVEEX-RISCV/.idea/
+
+EVEEX-RISCV/build/nexys4ddr/gateware/.Xil/
+
+EVEEX-RISCV/build/nexys4ddr/gateware/
+
+EVEEX-RISCV/build/
+
+EVEEX-RISCV/__pycache__/
+
+EVEEX-RISCV/firmware/firmware.bin
+
+EVEEX-RISCV/firmware/firmware.elf
+
+EVEEX-RISCV/firmware/snake_game/
+
+EVEEX-RISCV/module/__pycache__/
