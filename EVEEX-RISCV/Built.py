@@ -12,7 +12,6 @@ from litex.soc.interconnect.csr import *
 
 from litex.soc.cores import gpio
 from module import rgbled
-from module import spijoystick
 from module import sevensegment
 from module import vgacontroller
 
@@ -24,10 +23,10 @@ class BaseSoC(SoCCore):
         platform = nexys4ddr.Platform()
         # SoC with CPU
         SoCCore.__init__(self, platform,
-                         cpu_type="picorv32",
-                         clk_freq=100e6,
-                         integrated_rom_size=0x9000,
-                         integrated_main_ram_size=16 * 1024)
+                         cpu_type="picorv32",  # the cpu type
+                         clk_freq=100e6,  #configure frequency of the SOC (max 100e-6)
+                         integrated_rom_size=0x9000,  #configure ROM Size (max unknown)
+                         integrated_main_ram_size=16 * 1024) #configure memory available(max is 128mib) => check LiteX DRAM
 
         # Clock Reset Generation
         self.submodules.crg = CRG(platform.request("clk100"), ~platform.request("cpu_reset"))
