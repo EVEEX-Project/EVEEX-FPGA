@@ -2,16 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 #include <irq.h>
 #include <uart.h>
 #include <console.h>
 #include <generated/csr.h>
 
 #include "delay.h"
-#include "spijoystick.h"
 #include "display.h"
-#include "PmodJSTK2.h"
-#include "snake.h"
 
 static char *readstr(void)
 {
@@ -81,8 +79,6 @@ static void help(void)
 	puts("knight                          - knight rider");
 	puts("switch                          - switch test");
 	puts("rgbled                          - rgb led test");
-	puts("joystick                        - joystick test");
-	puts("snake                           - snake onboard game");
 	puts("vga                             - vga test");
 }
 
@@ -136,12 +132,12 @@ static void knight_rider(void)
 	for(i=0; i<15; i++) {
 		count=count*2;
 		leds_out_write(count);
-		busy_wait(1);
+		busy_wait(100);
 	}
 	for(i=16; i>0; i--) {
 		count=count/2;
 		leds_out_write(count);
-		busy_wait(1);
+		busy_wait(100);
 	}
 }
 
@@ -240,30 +236,6 @@ static void rgbled_test(void)
     */
 }
 
-static void joystick_test(void)
-{
-	//unsigned short smpX,smpY;
-	unsigned char fsButtons=0;
-	unsigned char stdPktValues [5];
-	unsigned char rtrnValues [2];
-	unsigned char x;
-	//unsigned char y;
-	unsigned short i = 1;
-	while((fsButtons&bitJstk)==0) {
-		getCommand(cmdGetPosition,2,stdPktValues,rtrnValues);
-		//smpX = stdPktValues[0]+(stdPktValues[1]<<8);
-		//smpY = stdPktValues[2]+(stdPktValues[3]<<8);
-		fsButtons = stdPktValues[4];
-		x = rtrnValues[0];
-		//y = rtrnValues[1];
-		if(x < 85) i = ((i>=0x8000) ? 0x8000 : i*2);
-		else if(x > 170) i = ((i<=1) ? 1 : i/2);
-		else i=i;
-		leds_out_write(i);
-		delay_ms(250);
-	}
-	leds_out_write(0);
-}
 
 static void vga_test(void)
 {
@@ -303,10 +275,8 @@ static void console_service(void)
 		switch_test();
 	else if(strcmp(token, "rgbled") == 0)
 		rgbled_test();
-	else if(strcmp(token, "joystick") == 0)
-		joystick_test();
-	else if(strcmp(token, "snake") == 0)
-		snake();
+	/*else if(strcmp(token, "snake") == 0)
+		snake();*/
 	else if(strcmp(token, "vga") == 0)
 		vga_test();
 	prompt();

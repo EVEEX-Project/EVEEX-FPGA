@@ -60,10 +60,6 @@ class BaseSoC(SoCCore):
         display_digits = Cat(*[platform.request("display_digit", i) for i in range(8)])
         self.submodules.display = sevensegment.SevenSegment(display_segments, display_digits)
 
-        # Joystick SPI
-        SoCCore.add_csr(self, "joystick")
-        self.submodules.joystick = spijoystick.SpiJoystick(platform.request("joystick"))
-
         # VGA
         SoCCore.add_csr(self, "vga_cntrl")
         vga_red = Cat(*[platform.request("vga_red", i) for i in range(4)])
