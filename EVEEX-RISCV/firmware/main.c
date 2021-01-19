@@ -154,13 +154,11 @@ static void switch_test(void)
 
 static void rgbled_test(void)
 {
-	/*unsigned int T = 128;
-	unsigned int diviseur = 32;
-	char intensity = 50;	//percentage
-	char select = 0;	//1->left, 0->right
-	unsigned int cpt_r=0, cpt_g=diviseur*1, cpt_b=diviseur*2;
+	unsigned int T = 64;
+    int i;
+	printf("RGB...\n");
 
-	led16_r_period_write(T);
+    led16_r_period_write(T);
 	led16_g_period_write(T);
 	led16_b_period_write(T);
 
@@ -175,59 +173,21 @@ static void rgbled_test(void)
 	led17_r_enable_write(1);
 	led17_g_enable_write(1);
 	led17_b_enable_write(1);
-
-	while(!(buttons_in_read()&1<<0)) {		//center
-		if(buttons_in_read()&(1<<1)) {	//down
-			if(intensity==0)intensity=0;
-			else intensity -= 1;
-		}
-		if(buttons_in_read()&(1<<2)) {	//up
-			if(intensity>=100)intensity=100;
-			else intensity += 1;
-		}
-		if(buttons_in_read()&(1<<3)) select = 0;	//right
-		if(buttons_in_read()&(1<<4)) select = 1;	//left
-
-		if(select==0) {
-			led17_r_width_write(0);
-			led17_g_width_write(0);
-			led17_b_width_write(0);
-
-			if(cpt_r<diviseur) led16_r_width_write((float)cpt_r/diviseur*T*intensity/100);
-			else if(cpt_r<2*diviseur) led16_r_width_write((2-(float)cpt_r/diviseur)*T*intensity/100);
-			else led16_r_width_write(0);
-
-			if(cpt_g<diviseur) led16_g_width_write((float)cpt_g/diviseur*T*intensity/100);
-			else if(cpt_g<2*diviseur) led16_g_width_write((2-(float)cpt_g/diviseur)*T*intensity/100);
-			else led16_g_width_write(0);
-
-			if(cpt_b<diviseur) led16_b_width_write((float)cpt_b/diviseur*T*intensity/100);
-			else if(cpt_b<2*diviseur) led16_b_width_write((2-(float)cpt_b/diviseur)*T*intensity/100);
-			else led16_b_width_write(0);
-		}
-		else {
-			led16_r_width_write(0);
-			led16_g_width_write(0);
-			led16_b_width_write(0);
-
-			if(cpt_r<diviseur) led17_r_width_write((float)cpt_r/diviseur*T*intensity/100);
-			else if(cpt_r<2*diviseur) led17_r_width_write((2-(float)cpt_r/diviseur)*T*intensity/100);
-			else led17_r_width_write(0);
-
-			if(cpt_g<diviseur) led17_g_width_write((float)cpt_g/diviseur*T*intensity/100);
-			else if(cpt_g<2*diviseur) led17_g_width_write((2-(float)cpt_g/diviseur)*T*intensity/100);
-			else led17_g_width_write(0);
-
-			if(cpt_b<diviseur) led17_b_width_write((float)cpt_b/diviseur*T*intensity/100);
-			else if(cpt_b<2*diviseur) led17_b_width_write((2-(float)cpt_b/diviseur)*T*intensity/100);
-			else led17_b_width_write(0);
-		}
-
-		cpt_r = (cpt_r+1)%(3*diviseur);
-		cpt_g = (cpt_g+1)%(3*diviseur);
-		cpt_b = (cpt_b+1)%(3*diviseur);
-
-		busy_wait(1);
+	for(i=0; i<5; i++) {
+		led16_r_width_write(100);
+		busy_wait(200);
+		led16_g_width_write(100);
+		busy_wait(200);
+		led16_b_width_write(100);
+		busy_wait(200);
+	}
+	for(i=16; i>0; i--) {
+		led17_r_width_write(100);
+		busy_wait(200);
+		led17_g_width_write(100);
+		busy_wait(200);
+		led17_b_width_write(100);
+		busy_wait(200);
 	}
 	led16_r_width_write(0);
 	led16_g_width_write(0);
@@ -235,7 +195,7 @@ static void rgbled_test(void)
 	led17_r_width_write(0);
 	led17_g_width_write(0);
 	led17_b_width_write(0);
-    */
+
 }
 
 
