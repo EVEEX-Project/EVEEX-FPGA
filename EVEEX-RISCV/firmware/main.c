@@ -10,6 +10,7 @@
 
 #include "delay.h"
 #include "display.h"
+#include "hello_world.h"
 
 static char *readstr(void)
 {
@@ -77,6 +78,7 @@ static void help(void)
 	puts("display                         - display test");
 	puts("led                             - led test");
 	puts("knight                          - knight rider");
+	puts("helloworld                      - Hello world");
 	puts("switch                          - switch test");
 	puts("rgbled                          - rgb led test");
 	puts("vga                             - vga test");
@@ -271,6 +273,8 @@ static void console_service(void)
 		led_test();
 	else if(strcmp(token, "knight") == 0)
 		knight_rider();
+    else if(strcmp(token, "helloworld") == 0)
+		helloworld();
 	else if(strcmp(token, "switch") == 0)
 		switch_test();
 	else if(strcmp(token, "rgbled") == 0)
