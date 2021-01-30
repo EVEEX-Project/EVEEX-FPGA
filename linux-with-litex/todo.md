@@ -8,7 +8,7 @@
 
 Attention, dans l'architecture de base disponible ici https://github.com/litex-hub/linux-on-litex-vexriscv, le CPU a été compilé avec l'ISA `rv32ima`.
 
-Quelques informations sur les options du compilateur sont disponibles [ici](./compiler_options.md).
+Quelques informations sur les options du compilateur sont disponibles [ici](./compiler-options.md).
 
 ## Utilisation d'un binaire cross-compilé
 
