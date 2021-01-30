@@ -1,6 +1,8 @@
 # Options du compilateur
 
 > Reprise de https://five-embeddev.com/toolchain/2019/06/26/gcc-targets/
+>
+> Le tutoriel de SiFive est très bien aussi : https://www.sifive.com/blog/all-aboard-part-1-compiler-args
 
 Getting started with RISC-V. Compiling for the RISC-V target. This post covers the GCC machine architecture (*-march*), ABI (*-mabi*) options and how they relate to the RISC-V base ISA and extensions. It also looks at the multilib configuration for GCC.
 
