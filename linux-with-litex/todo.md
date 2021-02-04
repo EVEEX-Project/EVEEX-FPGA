@@ -2,6 +2,8 @@
 
 - [x] Chargement d'un binaire cross-compilé
 - [ ] Manipulation des périphériques existants
+- [ ] Ajout d'un périphérique standard
+- [ ] Ajout d'un périphérique custom
 - [x] Recompil d'un noyau Linux Buildroot si on veut ajouter 2-3 utilitaires
 
 ## Architecture de base
@@ -108,6 +110,19 @@ Deux méthodes sont présentées pour intégrer du code métier :
 
 - Ajout dans le "custom rootfs" (méthode utilisée ici)
 - Ecriture de recette pour des projets métiers https://www.blaess.fr/christophe/buildroot-lab/index.html#VII.3
+
+## Emulation d'un Buildroot avec QEmu
+
+Voir ce tutoriel https://wiki.qemu.org/Documentation/Platforms/RISCV et les options pour un RISC-V 32 bits.
+
+![qemu](./qemu.png)
+
+On a un Buildroot qui boot!
+
+Le CPU est clairement plus générique que celui implémenté sur FPGA.
+
+- Possible d'émuler un CPU IMA ?
+- Possible d'utiliser la même image Buildroot que sur FPGA ?
 
 ## Manipulations des périphériques existants
 
