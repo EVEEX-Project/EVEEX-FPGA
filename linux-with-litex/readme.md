@@ -16,3 +16,5 @@ $ ./make.py --board=nexys4ddr --cpu-count=1 --build
 $ ./make.py --board=nexys4ddr --cpu-count=1 --load
 $ sudo lxterm --images=images/boot.json /dev/ttyUSB1 --speed=1e6
 ```
+
+Le fichier [todo.md](./todo.md) contient une liste non exhaustive des manipulations effectuées.
