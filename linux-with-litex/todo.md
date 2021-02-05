@@ -2,6 +2,8 @@
 
 - [x] Chargement d'un binaire cross-compilé
 - [ ] Manipulation des périphériques existants
+- [ ] Ajout d'un périphérique standard
+- [ ] Ajout d'un périphérique custom
 - [x] Recompil d'un noyau Linux Buildroot si on veut ajouter 2-3 utilitaires
 
 ## Architecture de base
@@ -69,7 +71,7 @@ $ make
 Et copier les images dans le répertoire de `llinux-on-litex-vexriscv` pour télécharger l'image sur la carte :
 
 ```bash
-$ cp output/images* ~/linux-on-litex-vexriscv/images
+$ cp output/images/* ~/linux-on-litex-vexriscv/images
 $ cd ~/linux-on-litex-vexriscv
 $ sudo lxterm --images=images/boot.json /dev/ttyUSB1 --speed=1e6
 ```
@@ -109,6 +111,19 @@ Deux méthodes sont présentées pour intégrer du code métier :
 - Ajout dans le "custom rootfs" (méthode utilisée ici)
 - Ecriture de recette pour des projets métiers https://www.blaess.fr/christophe/buildroot-lab/index.html#VII.3
 
+## Emulation d'un Buildroot avec QEmu
+
+Voir ce tutoriel https://wiki.qemu.org/Documentation/Platforms/RISCV et les options pour un RISC-V 32 bits.
+
+![qemu](./qemu.png)
+
+On a un Buildroot qui boot!
+
+Le CPU est clairement plus générique que celui implémenté sur FPGA.
+
+- Possible d'émuler un CPU IMA ?
+- Possible d'utiliser la même image Buildroot que sur FPGA ?
+
 ## Manipulations des périphériques existants
 
 TODO
@@ -131,3 +146,5 @@ On se retrouve avec un menu semblable à un bon vieux BIOS où on peut modifier 
 - `Target options` : on peut voir que les options du fichier de configuration du VexRiscV sont bien prises en compte (architecture, ISA, ABI...)
 
 Une fois les modifications effectuées, il suffit de sauvegarder et quitter : le delta sera intégré dans le fichier de configuration de Buildroot `.config` en plus des paramètres déjà pré-remplis.
+
+Reste à effectuer un `make` et le résultat sera dans `output/images`.
