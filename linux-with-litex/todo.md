@@ -115,7 +115,14 @@ Deux méthodes sont présentées pour intégrer du code métier :
 
 Voir ce tutoriel https://wiki.qemu.org/Documentation/Platforms/RISCV et les options pour un RISC-V 32 bits.
 
-![qemu](./qemu.png)
+```
+Welcome to emulated Buildroot for Eveex
+qemu-eveex login: root
+# cat /proc/cpuinfo 
+processor	: 0
+hart		: 0
+isa		: rv32imafdcsu
+```
 
 On a un Buildroot qui boot!
 
