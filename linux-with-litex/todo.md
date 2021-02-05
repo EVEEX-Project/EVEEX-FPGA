@@ -71,7 +71,7 @@ $ make
 Et copier les images dans le répertoire de `llinux-on-litex-vexriscv` pour télécharger l'image sur la carte :
 
 ```bash
-$ cp output/images* ~/linux-on-litex-vexriscv/images
+$ cp output/images/* ~/linux-on-litex-vexriscv/images
 $ cd ~/linux-on-litex-vexriscv
 $ sudo lxterm --images=images/boot.json /dev/ttyUSB1 --speed=1e6
 ```
