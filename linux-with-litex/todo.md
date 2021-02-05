@@ -146,3 +146,5 @@ On se retrouve avec un menu semblable à un bon vieux BIOS où on peut modifier 
 - `Target options` : on peut voir que les options du fichier de configuration du VexRiscV sont bien prises en compte (architecture, ISA, ABI...)
 
 Une fois les modifications effectuées, il suffit de sauvegarder et quitter : le delta sera intégré dans le fichier de configuration de Buildroot `.config` en plus des paramètres déjà pré-remplis.
+
+Reste à effectuer un `make` et le résultat sera dans `output/images`.
